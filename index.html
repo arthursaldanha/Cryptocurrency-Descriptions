@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+   <!-- Import CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Import Favicon -->
+   <link rel="shortcut icon" href="./Favicon/favicon-16x16.png" type="image/x-icon">
+   <title>CryptoSearch</title>
+</head>
+<body>
+   <main class="container">
+      <h1>CryptoSearch</h1>
+      <form class="cryptos">
+         <select name="Cryptos" id="cryptos__option">
+            <option value="" selected>Selecione uma Criptomoeda ou DeFi</option>
+            <option value="AAVE">AAVE</option>
+            <option value="BAL">Balancer</option>
+            <option value="BTC">Bitcoin</option>
+            <option value="BCH">Bitcoin Cash</option>
+            <option value="COMP">Compound</option>
+            <option value="DAI">Dai</option>
+            <option value="ETH">Ethereum</option>
+            <option value="LTC">Litecoin</option>
+            <option value="MKR">Maker</option>
+            <option value="PAXG">PAX Gold</option>
+            <option value="UMA">UMA</option>
+            <option value="UNI">Uniswap</option>
+            <option value="USDC">USD Coin</option>
+            <option value="XRP">XRP</option>
+         </select>
+         <button>Selecionar</button>
+      </form>
+
+      <div class="warning"></div>
+
+      <div class="result">
+         <img>
+         <div class="content">
+            <p class="name">--</p>
+            <p class="symbol">--</p>
+            <div class="info">
+               <p class="variation">--</p>
+               <p class="price">--</p>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="./script.js"></script>
+</body>
+</html>

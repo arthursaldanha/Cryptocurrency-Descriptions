@@ -1,0 +1,45 @@
+* {
+   padding: 0;
+   border: 0;
+   margin: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+   background-color: #ebebeb;
+}
+
+.container {
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.container h1 {
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.cryptos select {
+   padding: 15px;
+   border-radius: 7px;
+}
+
+.cryptos button {
+   background-color: #f78d30;
+   color: #fff;
+   padding: 15px;
+   cursor: pointer;
+   border-radius: 7px;
+   transition: all 0.4s;
+}
+
+.cryptos button:hover {
+   background-color: #e77511;
+}
+
+.warning {
+   text-align: center;
+   margin-top: 10px
+}
