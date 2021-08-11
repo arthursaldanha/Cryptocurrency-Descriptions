@@ -12,15 +12,13 @@
          let URL = `https://www.mercadobitcoin.net/api/${value}/ticker/`;
          let res = await fetch(URL);
          let json = await res.json();
+
+         console.log(json);
          
          json.ticker.last = parseFloat(json.ticker.last).toFixed(2);
-         json.ticker.open = parseFloat(json.ticker.open).toFixed(2);
 
          showInfo({
             price: json.ticker.last,
-            open: json.ticker.open,
-            high: json.ticker.high,
-            low: json.ticker.low
          })
       } else {
          showWarining("Selecione uma das opções corretamente!");
@@ -29,17 +27,14 @@
 
       function showInfo(json) {
          showWarining("")
-   
+
          document.querySelector(".result").style.display = "block"
          document.querySelector(".name").innerHTML = text;
          document.querySelector(".symbol").innerHTML = value;
          document.querySelector(".price").innerHTML = `Cotação Atual: <b>R$ ${json.price}</b>`
-         
-         let percentage = (json.price / json.open).toFixed(2);
-         document.querySelector(".variation").innerHTML = `Variação em 24h: <b>${percentage}%</b>`;
 
-         let image = document.querySelector(".image")
-         image.src = `./Images/${value}.png`
+         let image = document.querySelector(".image");
+         image.src = `./Images/${value}.png`;
       }
    })
 
